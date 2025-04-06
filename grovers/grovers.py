@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import pennylane as qml
 import numpy as np
 
@@ -28,6 +27,9 @@ def _grovers(omega, nq):
 
     return qml.probs(wires=wires)
 
-def search(search_space_size, solution_space):
-    num_qubits = int(np.log2(search_space_size))
-    # TODO: this lol
+# TODO: Translate classical search space to quantum one (O(n), hopefully); need to figure out how to structure this
+
+def search(search_space, item):
+    # TODO: this doesn't make sense right now
+    # TODO: this should search and find the answer(s) in O(sqrt(n)) time
+    pass
